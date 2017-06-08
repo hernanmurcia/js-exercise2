@@ -10,7 +10,8 @@ function addToDo(event){
     return false;
   }
 
-  toDoList.innerHTML += '<li>' + userInput.value + '</li>';
+  // toDoList.innerHTML += '<li>' + userInput.value + '</li>';
+  toDoList.innerHTML = '<li>' + userInput.value + '</li>' + toDoList.innerHTML;
 
   userInput.value = '';
 }
